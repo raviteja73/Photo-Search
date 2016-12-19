@@ -303,6 +303,7 @@ public class SearchActivity extends AppCompatActivity implements ImageCardAdapte
                 ArrayList <Image> images = new ArrayList < > ();
                 Image image = new Image();
                 images.add(image);
+                Toast.makeText(getApplicationContext(),"No image available for this search",Toast.LENGTH_SHORT).show();
                 image.setImageUrl("http://epochcoffee.com/wp-content/themes/seller/assets/images/placeholder2.jpg");
                 image.setIntroduction("No Description avaliable");
                 ImageCardAdapter adapter = new ImageCardAdapter(SearchActivity.this, images);
