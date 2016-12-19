@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.chsra.photosearch.SearchActivity"
+    tools:showIn="@layout/activity_search"
+    android:weightSum="1"
+    android:id="@+id/parentLayout"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+    <!-- <include layout="@layout/image_card_view"/>-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/image_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="242dp"
+
+            android:background="@color/cardview_shadow_end_color">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/title_activity_history"
+        android:id="@+id/textView2"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textIsSelectable="false"
+        android:textSize="25dp" />
+
+    <!-- <include layout="@layout/history_card_view" />-->
+
+    <!-- <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="fill_parent"
+         android:layout_height="match_parent">
+
+         <android.support.v7.widget.RecyclerView
+             android:id="@+id/history_cardView"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:background="@color/cardview_shadow_end_color">
+         </android.support.v7.widget.RecyclerView>
+     </LinearLayout>-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="190dp"
+            android:id="@+id/searchTopThreeListView"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/emptyText"
+            android:visibility="invisible"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/view_more_history"
+        android:id="@+id/viewAll"
+        android:layout_gravity="right"
+        android:textColor="#0067b1"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

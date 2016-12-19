@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Photo Search</string>
+    <string name="action_history">History</string>
+    <string name="appTitle">PHOTO SEARCH</string>
+    <string name="title_activity_search">SEARCH</string>
+    <string name="title_activity_history"><font size="14">Your first 3 searches</font></string>
+    <string name="edittext_hint">Search</string>
+    <string name="action_clear_history">Clear All</string>
+    <string name="empty_history">Your history is empty at this moment</string>
+    <string name="view_more_history">View All     > </string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Photo Search</string>
+    <string name="slide_1_desc">The best app to search for photos of famous personalities and places</string>
+
+    <string name="slide_2_title">Photo Suggestions</string>
+    <string name="slide_2_desc">We assist in your search by providing photo suggestions</string>
+
+    <string name="slide_4_title">History</string>
+    <string name="slide_4_desc">Your search history is private. We do not save your search.</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+</resources>

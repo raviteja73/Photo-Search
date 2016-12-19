@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.chsra.photosearch.SearchActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/My.AppTheme"
+            app:titleTextColor="@color/myToolbarTextColor">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:background="@drawable/search_border"
+            android:id="@+id/searchLayout">
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchText"
+                android:background="@android:color/transparent"
+                android:layout_weight="0.52"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/myToolbarTextColor"
+                android:textCursorDrawable="@null"
+                android:hint="@string/edittext_hint"
+                android:textColorHint="@color/hintTextColor" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:id="@+id/searchButton"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?android:selectableItemBackground"/>
+
+        </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_search" />
+
+</android.support.design.widget.CoordinatorLayout>
